@@ -14,5 +14,8 @@ public class Main {
         cuenta1.setId(scanner.nextInt());
         cuenta1.setPassword(scanner.nextLine());
         cuenta1.leerDatos();
+
+        User user1 = new User(1,"si", "no", "depende", "si");
+        user1.printDataUser();
     }
 }
