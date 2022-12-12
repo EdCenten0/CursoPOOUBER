@@ -4,7 +4,7 @@ class Car{
     public $id;
     public $license;
     public $driver;
-    public $passengers;
+    protected $passengers;
 
     public function __construct($license, $driver){
         $this->license = $license;
@@ -13,10 +13,26 @@ class Car{
     }
 
     public function printDataCar(){
-        echo "Licencia: $this->license Driver:".$this->driver->name;
+        echo "
+        Licencia: $this->license 
+        Driver: {$this->driver->name} 
+        Número de pasajeros: $this->passengers
         
+
+    ";
     }
 
+    public function getPassengers(){
+        return $this->passengers;
+    }
+
+    public function setPassengers($passengers){
+        if($passengers == 4){
+            $this->passengers = $passengers;
+        }else{
+            echo "Necesitas tener 4 pasajeros";
+        }
+    }
 
     
 }
