@@ -38,6 +38,25 @@ public class UberVan  extends Car{
 
 
     }
+
+    public Map<String, Map<String, Integer>> getTypeCarAccepted() {
+        return typeCarAccepted;
+    }
+
+    public void setTypeCarAccepted(Map<String, Map<String, Integer>> typeCarAccepted) {
+        this.typeCarAccepted = typeCarAccepted;
+    }
+
+    public ArrayList<String> getSeatsMaterial() {
+        return seatsMaterial;
+    }
+
+    public void setSeatsMaterial(ArrayList<String> seatsMaterial) {
+        this.seatsMaterial = seatsMaterial;
+    }
+
+
+    
     
 
 }
